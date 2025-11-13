@@ -15,7 +15,7 @@ const app = express();
 // ✅ Enable CORS for frontend running on port 3001
 app.use(
   cors({
-    origin: "http://localhost:3001", // your React app
+    origin: ["http://localhost:3001","http://localhost:3000"], // your React app
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // if you send cookies or auth headers
